@@ -1,1 +1,215 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+
+  max-width: 100vw;
+
+  max-height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.left-reveal {
+  opacity: 0.5;
+  transition: all 4s ease;
+  top: 45%;
+  left: 10%;
+  position: absolute;
+  margin-left: 16px;
+}
+
+.right-reveal {
+  opacity: 0.5;
+  transition: all 4s ease;
+  right: 10%;
+  top: 47%;
+  position: absolute;
+  margin-right: 16px;
+}
+
+.left-reveal:hover {
+  opacity: 0.8;
+  transition: all 1.2s ease;
+}
+
+.right-reveal:hover {
+  opacity: 0.8;
+  transition: all 1.2s ease;
+}
+
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.links {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.05s ease-in-out;
+}
+
+.sidenavlink {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sidenavlink:hover {
+}
+
+.links:hover {
+  color: #688c7abf;
+  font-size: 30px;
+}
+
+#image {
+  transition: all 3.2s ease;
+  z-index: 9999;
+  margin-top: 100px;
+}
+
+#image:hover {
+  -ms-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  transform: rotate(8deg);
+  transition: all 3.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  height: 160px;
+  margin: -8px;
+  padding-right: 15px;
+  display: flex;
+  max-width: 100vw;
+  align-items: center;
+  /*background-color: #688c7abf;*/
+  background-color: #d2dbce;
+  color: white;
+  font-weight: 600;
+}
+
+.footer {
+  height: 60px;
+  width: 100vw;
+  margin: auto;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100vw;
+  align-items: center;
+  background-color: #688c7abf;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 0px -15px 18px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -15px 18px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -15px 18px -10px rgba(0, 0, 0, 0.75);
+}
+
+.content {
+  top: 50%;
+  right: 60%;
+}
+
+.tnetnoc {
+  background-color: #d2dbce;
+  position: relative;
+}
+
+.mat-drawer-content {
+  overflow: hidden !important;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #d2dbce;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook-square {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.fa-facebook-square:hover {
+  transform: scale(1.25);
+  transition: all 0.2s ease-in-out;
+  color: #3b5998;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100vw;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+}

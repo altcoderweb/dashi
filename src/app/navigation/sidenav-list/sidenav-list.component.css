@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: #d2dbce;
+}
+
+.nav-caption {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+mat-nav-list {
+  display: inline-block;
+  right: 50%;
+  left: 50%;
+  margin: auto;
+}
+
+mat-nav-list > a {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
