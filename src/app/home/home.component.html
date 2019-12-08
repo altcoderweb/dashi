@@ -1,37 +1,52 @@
-<div class="tnecnoc">
-  <img
-    style="opacity: 0.8;"
-    class="centre"
-    src="../../assets/images/dashiwriting.svg"
-    alt="dashi image"
-    height="200px"
-    width="330px"
-  />
-  <div>
-    <img
-      (mouseover)="showText = true"
-      id="image"
-      class="centre"
-      src="../../assets/images/horse.svg"
-      alt="horse image"
-      height="300px"
-      width="427px"
-    />
+<div class="wrapper">
+  <div class="container">
+    <div class="columns">
+      <div class="col coming-soon" id="content-desktop">
+        <img
+          src="../../assets/images/coming.svg"
+          alt="coming image"
+          height="400rem"
+          width="400rem"
+        />
+      </div>
+      <div class="col">
+        <div class="row">
+          <img
+            style="opacity: 0.8;"
+            src="../../assets/images/dashiwriting.svg"
+            alt="dashi image"
+            height="100%"
+            width="100%"
+          />
+        </div>
+        <div id="content-desktop" class="row">
+          <img
+            style="opacity: 0;"
+            src="../../assets/images/dashiwriting.svg"
+            alt="dashi image"
+            height="50%"
+            width="50%"
+          />
+        </div>
+        <div class="row">
+          <img
+            id="image"
+            src="../../assets/images/horse.svg"
+            alt="horse image"
+            height="100%"
+            width="100%"
+          />
+        </div>
+      </div>
+
+      <div class="col coming-soon" id="content-desktop">
+        <img
+          src="../../assets/images/soon.svg"
+          alt="soon image"
+          height="300rem"
+          width="300rem"
+        />
+      </div>
+    </div>
   </div>
-</div>
-<div *ngIf="showText === true" class="left-reveal">
-  <img
-    src="../../assets/images/coming.svg"
-    alt="coming image"
-    height="200px"
-    width="360px"
-  />
-</div>
-<div *ngIf="showText === true" class="right-reveal">
-  <img
-    src="../../assets/images/soon.svg"
-    alt="soon image"
-    height="150px"
-    width="280px"
-  />
 </div>

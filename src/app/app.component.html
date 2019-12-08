@@ -1,14 +1,19 @@
-<mat-sidenav-container>
-  <mat-sidenav-content class="tnetnoc"
-    ><app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-    <mat-sidenav #sidenav (click)="sidenav.close()" role="navigation">
+<html>
+  <mat-sidenav-container autosize>
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <mat-sidenav
+      #sidenav
+      mode="side"
+      (click)="sidenav.close()"
+      role="directory"
+    >
       <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
     </mat-sidenav>
     <body (click)="sidenav.close()">
-      <div>
+      <div class="container">
         <router-outlet></router-outlet>
       </div>
     </body>
-    <app-footer></app-footer>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    <app-footer id="content-desktop"></app-footer>
+  </mat-sidenav-container>
+</html>
